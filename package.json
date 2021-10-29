@@ -1,0 +1,26 @@
+{
+  "name": "mern-todo-api",
+  "version": "1.0.0",
+  "description": "idk",
+  "main": "index.js",
+  "author": "anis",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.12"
+  },
+  "engines": {
+    "node": "16.8.0"
+}
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "start": "node server.js",
+    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
+  },
+  "proxy": "http://localhost:8000"
+}

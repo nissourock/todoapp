@@ -1,0 +1,9 @@
+GET http://localhost:3001/todos
+
+###
+
+POST http://localhost:3001/todos/new
+Content-Type: application/json
+{
+    "text": "hey this is the first task"
+}
